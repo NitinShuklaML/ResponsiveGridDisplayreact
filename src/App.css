@@ -1,38 +1,186 @@
-.App {
+/* * {
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI";
+	box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* .AppControls{
+	display: flex;
+	margin-left: 20%;
+	margin-right: 20%;	
+  width:60%;
+} 
+
+.search-container {	
+  display: flex;
+  width:60%;
+	margin: 1rem 0;		
+  margin-left: 20%;
+	margin-right: 20%;	
+}
+
+.search-container input {
+	width: 100%;	
+	padding: 10px;
+  margin-right:1rem;
+	font-size: 1rem;
+	outline: none;
+	border: 1px solid #ccc;
+}
+
+.sort-container{	
+	width:35%;
+	padding-left: 1rem;	
+	font-size: 1rem;	
+}
+
+.sort-container select{
+	width:100%;
+	outline: none;
+	border: 1px solid #ccc;
+}
+
+.search-button{
+  margin-left : 1rem;
+	width:15%;	
+	font-size: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AppTable {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table-container {
+	width: 60%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.table-container table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table thead {
+	background-color: #bbb;
+}
+
+table th,
+table td {
+	padding: 10px;
+	text-align: left;
+	min-width: 150px;
+}
+
+table th {
+	color: #121212;
+}
+
+tr {
+	border-bottom: 1px solid #bbb;
+} */
+
+
+
+
+
+/* styles for larger screens */
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.col {
+  flex-basis: 100%;
+}
+
+.col-60 {
+  flex-basis: 60%;
+  margin-right: 2%;
+}
+
+.col-25 {
+  flex-basis: 23%;
+  margin-right: 2%;
+}
+
+.col-10 {
+  flex-basis: 13%;
+}
+
+.input-style {
+  width: 100%;
+  height: 80%;
+}
+
+.text-input {
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.dropdown {
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.button {
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: lightgray;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th,
+td {
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+th {
+  background-color: lightgray;
+}
+
+/* styles for smaller screens */
+@media (max-width: 600px) {
+
+  .col-60,
+  .col-25,
+  .col-10 {
+    flex-basis: 100%;
+    margin: 0;
   }
 }
